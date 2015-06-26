@@ -1,0 +1,5 @@
+.contact {
+  @include span-columns(9);
+  @include reset-display;
+  @include pad();
+}

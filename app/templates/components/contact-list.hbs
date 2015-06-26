@@ -1,0 +1,11 @@
+{{input value=query}}
+
+<ul class="contact-list">
+  {{#each filteredContacts as |contact|}}
+    <li>
+      {{#link-to 'contacts.contact' contact}}
+        {{contact.fullName}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>

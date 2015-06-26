@@ -1,0 +1,18 @@
+{{gravatar-image email=model.email}}
+
+<dl>
+  <dt>Full Name</dt>
+  <dd>{{model.fullName}}</dd>
+
+  <dt>Email</dt>
+  <dd>{{model.email}}</dd>
+
+  <dt>Twitter</dt>
+  <dd>{{model.twitter}}</dd>
+</dl>
+
+<button {{action 'destroy'}}>Delete</button>
+{{#link-to 'contacts.edit' model tagName="button"}}
+  Edit
+{{/link-to}}
+{{outlet}}

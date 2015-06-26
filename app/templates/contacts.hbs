@@ -1,0 +1,12 @@
+<div class="contact-list">
+  <h2>Your Contacts</h2>
+
+  {{#link-to 'contacts.new' tagName='button'}}
+    NEW
+  {{/link-to}}
+  {{contact-list contacts=model}}
+</div>
+
+<div class="contact">
+  {{outlet}}
+</div>

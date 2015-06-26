@@ -1,0 +1,18 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "contacts";
+@import "contact";
+
+body {
+  margin: 0;
+}
+
+.container {
+  @include outer-container(100%);
+}
+
+.table-grid {
+  @include fill-parent();
+  @include row(table);
+}
